@@ -45,21 +45,24 @@
            WHERE DEPTNO1=101;
            
     --5
-   
+  -- when substr(tel,1,2)=02 then '서울'
            
            
            select name,
                   tel,
                   case
-                  when substr(tel,1,2)=02 then '서울'
+                  when substr(tel,1,3)=02 then '서울'
                   when substr(tel,1,3)=031 then '경기'
                   when substr(tel,1,3)=051 then '부산'
                   when substr(tel,1,3)=052 then '울산'
                   when substr(tel,1,3)=055 then '경남'
+                   
                 end 지역명
            from student
-           where deptno1 = 101
+           where deptno1 = 101;
            
+           select *
+           from student;
            
     
         
