@@ -31,9 +31,9 @@ INSERT INTO TABLE_DATA_2 VALUES (2, '2023-04-03');
 INSERT INTO TABLE_DATA_2 VALUES (3, '2023-04-04');
 INSERT INTO TABLE_DATA_2 VALUES (4, '2023-04-05');
 
-select 
+select *
 --delete
-* from TABLE_COLC1
+from TABLE_COLC1
 order by std_date;
 
 
@@ -54,8 +54,6 @@ WHEN NOT MATCHED THEN
     INSERT VALUES (B.CREATE_DATE, 'N', 'Y');
     
 
-
-delete from table_colc;
 
 
 
